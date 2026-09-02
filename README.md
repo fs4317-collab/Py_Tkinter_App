@@ -70,3 +70,7 @@ The operation automatically completes two updates simultaneously across the data
 
 2. **Stock Auto-Deducted:** Simultaneously, the `parts_inventory` table decrements the **Conveyor Drive Motor** inventory back down from **6 to 5**.
    > *![Parts_Inventory_Part_Removed](App_Demo/Screenshots/Parts_Inventory_Part_Removed.png)*
+
+## 🛡️ Exception & Error Management
+
+The application incorporates built-in error handling routines to manage unexpected inputs, database connectivity drops, out-of-stock scenarios, and invalid barcode scans, preventing crashes during operation. Please refer to the Python file for full implementation details.
