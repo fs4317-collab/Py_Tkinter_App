@@ -21,16 +21,17 @@ Below is a step-by-step visual demonstration showing how the Tkinter application
 
 The main Tkinter interface features an input field optimized for USB barcode scanners alongside targeted action buttons:
 
-> *(Insert Tkinter interface screenshot here)*
+> *![Inventory_Parts_Interface](App_Demo/Screenshots/Inventory_Parts_Interface.png)*
 
 #### Baseline Database Records
 Before performing any action, observe the starting data across both tracking tables:
 * **`parts_inventory` Table:** Part number `100005` (**Conveyor Drive Motor**) starts with **5 units**.
 * **`parts_usage` Table:** The `Machine_1` and `Machine_2` columns on all rows read **0**.
 
-| `parts_inventory` Table | `parts_usage` Table |
-| :---: | :---: |
-| *(Insert initial `parts_inventory` table screenshot)* | *(Insert initial `parts_usage` table screenshot)* |
+ ### `parts_inventory` Table  and `parts_usage` Table 
+
+ > *![Parts_Inventory_Table](App_Demo/Screenshots/Parts_Inventory_Table.png)*  
+ > *![Parts_Usage_Table](App_Demo/Screenshots/Parts_Usage_Table.png)* 
 
 ---
 
@@ -42,12 +43,12 @@ Using a barcode scanner, part number `100005` is scanned directly into the app, 
 2. **Action:** Click **Add Inventory**.
 3. **Confirmation:** A **Success** message box displays on screen.
 
-> *(Insert "Add Inventory" Success message screenshot here)*
+> *![Added_Inventory](App_Demo/Screenshots/Added_Inventory.png)*
 
 #### Database Result
 The `parts_inventory` table instantly reflects the transaction, increasing the **Conveyor Drive Motor** stock count from **5 to 6**.
 
-> *(Insert `parts_inventory` table showing count updated to 6 screenshot here)*
+> *![Parts_Inventory_Updated](App_Demo/Screenshots/Parts_Inventory_Updated.png)*
 
 ---
 
@@ -59,13 +60,13 @@ Next, the same part number (`100005`) is used to log a part replacement event by
 2. **Action:** Click **Use - Machine 1**.
 3. **Confirmation:** A **Success** message box displays on screen.
 
-> *(Insert "Use - Machine 1" Success message screenshot here)*
+> *![Use_Machine_1](App_Demo/Screenshots/Use_Machine_1.png)*
 
 #### Dual Table Real-Time Synchronization
 The operation automatically completes two updates simultaneously across the database:
 
 1. **Machine Usage Logged:** The `parts_usage` table updates the `Machine_1` column for the **Conveyor Drive Motor** row from **0 to 1**.
-   > *(Insert updated `parts_usage` table screenshot here)*
+   > *![Parts_Usage_M1](App_Demo/Screenshots/Parts_Usage_M1.png)*
 
 2. **Stock Auto-Deducted:** Simultaneously, the `parts_inventory` table decrements the **Conveyor Drive Motor** inventory back down from **6 to 5**.
-   > *(Insert updated `parts_inventory` table showing count back to 5 screenshot here)*
+   > *![Parts_Inventory_Part_Removed](App_Demo/Screenshots/Parts_Inventory_Part_Removed.png)*
