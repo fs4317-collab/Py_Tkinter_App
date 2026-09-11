@@ -74,3 +74,5 @@ The operation automatically completes two updates simultaneously across the data
 ## 🛡️ Exception & Error Management
 
 The application incorporates built-in error handling routines to manage unexpected inputs barcode scans and other errors. Please refer to the Python file for full implementation details.
+
+Oh crap
