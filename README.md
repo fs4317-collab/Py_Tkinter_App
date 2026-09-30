@@ -4,12 +4,21 @@
 > *This project is provided for viewing and portfolio purposes only. No permission is granted to copy, modify, distribute, or use this code without prior written permission.*
 
 ---
+> 🚧 **APPLICATION CURRENTLY BEING UPDATED**
+>
+> **Last Updated: September 30, 2026**
+>
+> Modifications and enhancements are currently being made to improve the application's functionality, usability, and inventory management capabilities. **Updates will be reflected in this repository as soon as they are completed.**
+
+---
 
 ## 📌 Overview
 
 **Py_Tkinter_App** is a Python/Tkinter inventory management application designed to simplify the tracking of machine parts and maintenance inventory. 
 
 The application uses **MySQL** to manage part information and inventory levels. It supports scanning or entering part numbers, adding and removing stock, and recording parts used on **Machine 1** or **Machine 2**. It provides a simple, intuitive interface for maintaining accurate, real-time inventory records and helps reduce manual tracking during equipment maintenance.
+
+Modifications have been made 
 
 ---
 
