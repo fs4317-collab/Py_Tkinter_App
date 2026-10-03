@@ -14,7 +14,7 @@ def connect_db():
     db = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Periquitos2!!"
+        password="YOUR PASSWORD"
     )
 
     cursor = db.cursor()
@@ -27,7 +27,7 @@ def connect_db():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Periquitos2!!",
+        password="YOUR PASSWORD",
         database="repair_parts_inventory"
     )
 
