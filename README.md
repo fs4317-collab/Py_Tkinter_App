@@ -41,7 +41,7 @@ The application can automatically create the required **MySQL database and table
 
 <div align="center">
 
-![Parts Inventory Management System](images/app-interface.png)
+![Parts Inventory Management System](App_Demo/Screenshots/Parts_Inventory_Interface.png)
 
 </div>
 
@@ -53,7 +53,11 @@ The application uses **MySQL** to store the Master Parts Inventory, current inve
 
 <div align="center">
 
-![MySQL Database](images/mysql-database.png)
+![Master Parts Inventory](App_Demo/Screenshots/Master_Parts_Inventory.png)
+
+<br><br>
+
+![MySQL Database](App_Demo/Screenshots/Database_repair_parts_inventory.png)
 
 </div>
 
@@ -67,9 +71,8 @@ The video provides a detailed walkthrough of importing parts, managing inventory
 
 <div align="center">
 
-[![Watch the Parts Inventory Management System Demo](images/video-thumbnail.png)](INSERT_VIDEO_LINK_HERE)
 
-### ▶️ [Watch the Full Application Demonstration](INSERT_VIDEO_LINK_HERE)
+### ▶️ [Watch the Full Application Demonstration](https://www.youtube.com/watch?v=RuG-JghGlY0)
 
 </div>
 
