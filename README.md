@@ -3,83 +3,103 @@
 > **Copyright © 2026 Felix Soto Toro. All rights reserved.**  
 > *This project is provided for viewing and portfolio purposes only. No permission is granted to copy, modify, distribute, or use this code without prior written permission.*
 
----
-> 🚧 **APPLICATION CURRENTLY BEING UPDATED**
->
-> **Last Updated: September 30, 2026**
->
-> Modifications and enhancements are currently being made to improve the application's functionality, usability, and inventory management capabilities. **Updates will be reflected in this repository as soon as they are completed.**
 
 ---
 
-## 📌 Overview
+<div align="center">
 
-**Py_Tkinter_App** is a Python/Tkinter inventory management application designed to simplify the tracking of machine parts and maintenance inventory. 
+# ⚙️ Parts Inventory Management System
 
-The application uses **MySQL** to manage part information and inventory levels. It supports scanning or entering part numbers, adding and removing stock, and recording parts used on **Machine 1** or **Machine 2**. It provides a simple, intuitive interface for maintaining accurate, real-time inventory records and helps reduce manual tracking during equipment maintenance.
+### Python • Tkinter • MySQL
 
-Modifications have been made 
+*A simple desktop application for tracking machine parts, inventory, and equipment usage.*
 
----
-
-## 📽 App Walkthrough & Interface Demonstration
-
-Below is a step-by-step visual demonstration showing how the Tkinter application interacts in real time with the MySQL database during standard maintenance workflow actions.
-
-### 1️⃣ Initial System State
-
-The main Tkinter interface features an input field optimized for USB barcode scanners alongside targeted action buttons:
-
-> *![Inventory_Parts_Interface](App_Demo/Screenshots/Inventory_Parts_Interface.png)*
-
-#### Baseline Database Records
-Before performing any action, observe the starting data across both tracking tables:
-* **`parts_inventory` Table:** Part number `100005` (**Conveyor Drive Motor**) starts with **5 units**.
-* **`parts_usage` Table:** The `Machine_1` and `Machine_2` columns on all rows read **0**.
-
- ### `parts_inventory` Table  and `parts_usage` Table 
-
- > *![Parts_Inventory_Table](App_Demo/Screenshots/Parts_Inventory_Table.png)*  
- > *![Parts_Usage_Table](App_Demo/Screenshots/Parts_Usage_Table.png)* 
+</div>
 
 ---
 
-### 2️⃣ Adding Stock via Barcode Scanner
+## 📦 Overview
 
-Using a barcode scanner, part number `100005` is scanned directly into the app, followed by clicking the **Add Inventory** button.
+The **Parts Inventory Management System** provides a simple interface for managing machine parts without requiring users to work directly with the database.
 
-1. **Scan:** Part number `100005` is inserted into the app.
-2. **Action:** Click **Add Inventory**.
-3. **Confirmation:** A **Success** message box displays on screen.
+### The application allows users to:
 
-> *![Added_Inventory](App_Demo/Screenshots/Added_Inventory.png)*
+- 📥 Import a Master Parts Inventory
+- ➕ Add and remove parts from inventory
+- 🔎 Enter or scan material numbers
+- 🔧 Record parts used on Machine 1 or Machine 2
+- 📊 Track current inventory quantities
+- 📄 Generate inventory and machine usage reports
+- 🗄️ Store inventory information in a MySQL database
+- 🗄️ Reports are automatically saved in a folder named: Parts Inventory Quarterly Reports
 
-#### Database Result
-The `parts_inventory` table instantly reflects the transaction, increasing the **Conveyor Drive Motor** stock count from **5 to 6**.
-
-> *![Parts_Inventory_Updated](App_Demo/Screenshots/Parts_Inventory_Updated.png)*
+The application can automatically create the required **MySQL database and tables** when the Master Parts Inventory is imported.
 
 ---
 
-### 3️⃣ Logging Part Consumption on Machine 1
+## 🖥️ Application Interface
 
-Next, the same part number (`100005`) is used to log a part replacement event by clicking the **Use - Machine 1** button.
+<div align="center">
 
-1. **Scan:** Part number `100005` is re-entered into the app.
-2. **Action:** Click **Use - Machine 1**.
-3. **Confirmation:** A **Success** message box displays on screen.
+![Parts Inventory Management System](images/app-interface.png)
 
-> *![Use_Machine_1](App_Demo/Screenshots/Use_Machine_1.png)*
+</div>
 
-#### Dual Table Real-Time Synchronization
-The operation automatically completes two updates simultaneously across the database:
+---
 
-1. **Machine Usage Logged:** The `parts_usage` table updates the `Machine_1` column for the **Conveyor Drive Motor** row from **0 to 1**.
-   > *![Parts_Usage_M1](App_Demo/Screenshots/Parts_Usage_M1.png)*
+## 🗄️ Database
 
-2. **Stock Auto-Deducted:** Simultaneously, the `parts_inventory` table decrements the **Conveyor Drive Motor** inventory back down from **6 to 5**.
-   > *![Parts_Inventory_Part_Removed](App_Demo/Screenshots/Parts_Inventory_Part_Removed.png)*
+The application uses **MySQL** to store the Master Parts Inventory, current inventory, and machine parts usage.
 
-## 🛡️ Exception & Error Management
+<div align="center">
 
-The application incorporates built-in error handling routines to manage unexpected inputs barcode scans and other errors. Please refer to the Python file for full implementation details.
+![MySQL Database](images/mysql-database.png)
+
+</div>
+
+---
+
+## 🎬 Video Demonstration
+
+For a complete explanation of how the application works, watch the full video demonstration.
+
+The video provides a detailed walkthrough of importing parts, managing inventory, recording machine usage, generating reports, and viewing the MySQL database.
+
+<div align="center">
+
+[![Watch the Parts Inventory Management System Demo](images/video-thumbnail.png)](INSERT_VIDEO_LINK_HERE)
+
+### ▶️ [Watch the Full Application Demonstration](INSERT_VIDEO_LINK_HERE)
+
+</div>
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|:---:|:---|
+| 🐍 **Python** | Application Development |
+| 🖥️ **Tkinter** | Desktop User Interface |
+| 🗄️ **MySQL** | Database Management |
+| 📋 **SQL** | Database Operations |
+| 🔗 **MySQL Connector** | Python/MySQL Connection |
+| 📄 **CSV** | Inventory Imports & Reports |
+
+---
+
+<div align="center">
+
+## 👨‍💻 Author
+
+**Felix Soto Toro**
+
+*Independent Application Developer*
+
+---
+
+### ⚙️ Parts Inventory Management System
+
+**Python • Tkinter • MySQL**
+
+</div>
